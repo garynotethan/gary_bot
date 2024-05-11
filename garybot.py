@@ -82,7 +82,7 @@ async def notation(ctx):
 
 @client.command(aliases=['pf'])
 async def pensfactory(ctx):
-    await ctx.send('https://pensfactory.pl/ is gary approved. It is recommended for many as the shipping fee is generally low for everyone.')
+    await ctx.send('https://pensfactory.pl/ is gary approved. It is recommended for many as the shipping fee is generally low for everyone. However it seems to have shut down... stock is very low and hasn\'t been updated in a while.')
 
 @client.command(aliases=['uxz'])
 async def spinworlds(ctx):
@@ -200,10 +200,6 @@ async def gay(ctx):
 async def retards(ctx):
     await ctx.send('the retard role is a throwback to the old penstock server where I would make a retard tier list to rank how annoying people were. **if you see somebody with this role, i would advise you to avoid listening to their advice**')
 
-@client.command(aliases=['exec'])
-async def execution(ctx):
-    await ctx.send('Maybe a bit debateable, but a good article to make you think a bit. https://hobbylogics.tumblr.com/post/662888263387856896/understanding-pen-spinning-execution-the-two')
-
 @client.command()
 async def setup(ctx):
     await ctx.send('https://coffeeluckyps.wordpress.com/2021/10/19/camera-setup-guide-for-pen-spinning-combo/')
@@ -259,7 +255,6 @@ async def wenyu(ctx):
 @client.command(aliases=['staplesmod', 'staples', 'staplesmodv1', 'garystaplesmod1', 'staplesmod1',])
 async def garystaplesmod(ctx):
     await ctx.send('https://youtu.be/xgSxwK2zYpk')
-    
     
 @client.command()
 async def spindys(ctx):
