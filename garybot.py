@@ -8,6 +8,12 @@ client = commands.Bot(command_prefix = '>', intents = discord.Intents.all())
 async def on_ready():
     print('gary bot is  lets gooo')
 
+@client.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send("bruh :woman_zombie:")
+    #add more errors here later...
+
 @client.command()
 async def modguide(ctx):
     await ctx.send('https://media.discordapp.net/attachments/833954424425545788/897172202942767194/unknown.png?width=382&height=300')
