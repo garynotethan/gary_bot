@@ -8,9 +8,9 @@ client = commands.Bot(command_prefix = '>', intents = discord.Intents.all())
 async def on_ready():
     print('gary bot is lets gooo')
 
-    for cog_file in settings.CMDS_DIR.glob("*.py"):
+    for cog_file in settings.COGS_DIR.glob("*.py"):
         if cog_file.name != "__init__.py":
-            await client.load_extension(f"commands.{cog_file.name[:-3]}")
+            await client.load_extension(f"cogs.{cog_file.name[:-3]}")
 
 @client.event
 async def on_error(ctx, error, message: discord.message):
@@ -51,36 +51,8 @@ async def links2(ctx):
     await ctx.send('https://www.youtube.com/watch?v=24CxVVMact4')
 
 @client.command()
-async def planet(ctx):
-    await ctx.send('https://discord.gg/5thTVupNHh')
-
-@client.command()
-async def workshop(ctx):
-    await ctx.send('https://discord.com/invite/7F4BjWD')
-
-@client.command()
-async def ipmc(ctx):
-    await ctx.send('https://discord.gg/wby7U2g')
-    
-@client.command()
-async def mpsd(ctx):
-    await ctx.send('https://discord.gg/347xyYa')
-
-@client.command()
-async def reddit(ctx):
-    await ctx.send('https://discord.com/invite/010bWcQCla9sRdYea')
-
-@client.command()
 async def penstock(ctx):
     await ctx.send('Penstock is priced unfairly, has terrible service, and delivery times can take forever (like multiple months!!! or sometimes NEVER!!!!!!). It is best to avoid this shop.**BOTH THE STORE AND THE YOUTUBE CHANNEL AREN\'T THE BEST.**tbf YT is not the worse tbh but spreads misinfo and penstock.net propoganda a lot, there are better tutorial channels')
-
-@client.command()
-async def psuk(ctx):
-    await ctx.send('https://discord.gg/AE2WQrz5JM')
-
-@client.command()
-async def kronen(ctx):
-    await ctx.send('https://discord.gg/AZDeABYj74')
 
 @client.command(name='penmoddingworld', aliases=['pmw'])
 async def pmw(ctx):
@@ -269,19 +241,7 @@ async def wenyu(ctx):
 @client.command(aliases=['staplesmod', 'staples', 'staplesmodv1', 'garystaplesmod1', 'staplesmod1',])
 async def garystaplesmod(ctx):
     await ctx.send('https://youtu.be/xgSxwK2zYpk')
-    
-@client.command()
-async def spindys(ctx):
-    await ctx.send('https://discord.gg/VzyYnfECnS')
-    
-@client.command()
-async def fenspinner(ctx):
-    await ctx.send('https://discord.gg/9ERAUCDAkS')
-
-@client.command(aliases=['india'])
-async def ibps(ctx):
-	await ctx.send('https://discord.gg/tmFJMsbp7u')
-    
+   
 @client.command(aliases=['guide','guide1','beginnerguide1'])
 async def beginnerguide(ctx):
     await ctx.send('https://youtu.be/QUL49ntJwFM')
@@ -306,10 +266,5 @@ async def drgrip(ctx):
 async def supertip(ctx):
     await ctx.send('https://youtu.be/ep6MSDCFHm0')
     
-@client.command()
-async def psworld(ctx):
-    await ctx.send('https://discord.gg/74N96vrAdN')
-
-
     
 client.run(settings.DISCORD_API_SECRET)
