@@ -6,12 +6,18 @@ client = commands.Bot(command_prefix = '>', intents = discord.Intents.all())
 
 @client.event
 async def on_ready():
-    print('gary bot is  lets gooo')
+    print('gary bot is lets gooo')
+
+    for cog_file in settings.CMDS_DIR.glob("*.py"):
+        if cog_file.name != "__init__.py":
+            await client.load_extension(f"commands.{cog_file.name[:-3]}")
 
 @client.event
-async def on_command_error(ctx, error):
+async def on_command_error(ctx, error, message: discord.Message):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("bruh :woman_zombie:")
+    elif isinstance(error, commands.CommandNotFound):
+        await message.add_reaction("🧟‍♀️")
     #add more errors here later...
 
 @client.command()
@@ -301,5 +307,7 @@ async def supertip(ctx):
 @client.command()
 async def psworld(ctx):
     await ctx.send('https://discord.gg/74N96vrAdN')
+
+
     
 client.run(settings.DISCORD_API_SECRET)
