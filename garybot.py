@@ -13,12 +13,14 @@ async def on_ready():
             await client.load_extension(f"commands.{cog_file.name[:-3]}")
 
 @client.event
-async def on_command_error(ctx, error, message: discord.Message):
+async def on_error(ctx, error, message: discord.message):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("bruh :woman_zombie:")
     elif isinstance(error, commands.CommandNotFound):
         await message.add_reaction("🧟‍♀️")
-    #add more errors here later...
+        await ctx.send("bruh :woman_zombie:")
+
+   #add more errors here later...
 
 @client.command()
 async def modguide(ctx):
@@ -186,7 +188,7 @@ async def ivantut(ctx):
 
 @client.command(aliases=['hashcomssa',])
 async def hashcomssatut(ctx):
-    await ctx.send('https://penmodding.pm/archives/6978 \n **Please note that the modern hash comssa \(the one we are recommending\) uses comssa instead of Bellcolor and signo tips instead of hi tec c**')
+    await ctx.send('https://penmodding.pm/archives/6978 \n **Please note that the modern hash comssa (the one we are recommending) uses comssa instead of Bellcolor and signo tips instead of hi tec c**')
 
 @client.command()
 async def plsmod(ctx):
@@ -234,7 +236,7 @@ async def bak(ctx):
 
 @client.command()
 async def taobao(ctx):
-    await ctx.send('taobao is big chinese store where manufactoring places sell cheap stuff yes. it is like where every store gets their parts in bulk \(spinworlds, penmoddingworld, spinstudio, etc\). https://www.reddit.com/r/penspinning/comments/aifitn/how_to_order_from_eno_if_you_live_in_the_usa/ Here is a simple guide on how to use Superbuy as an agent, but it\'s pretty much the same for every other agent, I personally used wegobuy. Taobao is used to buy many things, like replica sneakers and cheap fashion, so there\'s plenty of tutorials on how to buy from there that would work with buying pens. **I\'d say it\'s only worth to buy from taobao if you\'re buying a whole bunch of stuff**, not just one or two mods lol as shipping can be pricy and long for some. Save money and buy in bulk from here. You can also watch my guide, which goes a bit more into detail. https://youtu.be/w9tUAMJvVKU' )
+    await ctx.send('taobao is big chinese store where manufactoring places sell cheap stuff yes. it is like where every store gets their parts in bulk (spinworlds, penmoddingworld, spinstudio, etc). https://www.reddit.com/r/penspinning/comments/aifitn/how_to_order_from_eno_if_you_live_in_the_usa/ Here is a simple guide on how to use Superbuy as an agent, but it\'s pretty much the same for every other agent, I personally used wegobuy. Taobao is used to buy many things, like replica sneakers and cheap fashion, so there\'s plenty of tutorials on how to buy from there that would work with buying pens. **I\'d say it\'s only worth to buy from taobao if you\'re buying a whole bunch of stuff**, not just one or two mods lol as shipping can be pricy and long for some. Save money and buy in bulk from here. You can also watch my guide, which goes a bit more into detail. https://youtu.be/w9tUAMJvVKU')
 
 @client.command()
 async def spiloops(ctx):
