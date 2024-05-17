@@ -51,14 +51,6 @@ async def links2(ctx):
     await ctx.send('https://www.youtube.com/watch?v=24CxVVMact4')
 
 @client.command()
-async def penstock(ctx):
-    await ctx.send('Penstock is priced unfairly, has terrible service, and delivery times can take forever (like multiple months!!! or sometimes NEVER!!!!!!). It is best to avoid this shop.**BOTH THE STORE AND THE YOUTUBE CHANNEL AREN\'T THE BEST.**tbf YT is not the worse tbh but spreads misinfo and penstock.net propoganda a lot, there are better tutorial channels')
-
-@client.command(name='penmoddingworld', aliases=['pmw'])
-async def pmw(ctx):
-    await ctx.send('https://www.etsy.com/ca/shop/ModdingWorld is a Gary certified shop. Great Customer Support, and fast shipping. I recommend messaging penmoddingworld on etsy/insta or minionkevin#7873 on discord if you cant\'t find any parts/mods you\'re looking for, as they usually have a good stock of everything. I also recommend purchasing with them through paypal or banktransfer instead of through etsy since etsy takes a cut from the seller. **Please note that shipping from Canada can be expensive**')
-
-@client.command()
 async def cvs(ctx):
     await ctx.send('https://www.youtube.com/playlist?list=PLE4F7122D79474299 I recommend watching a bunch of cvs to get some inspiration! It\'s also a great way to develop spinning preferences and see potential areas you want to explore.')
 
@@ -66,29 +58,9 @@ async def cvs(ctx):
 async def notation(ctx):
     await ctx.send('https://drive.google.com/file/d/1TlDb1H5bRnZZdswmdr07m-58yxs4Es7-/view Good Luck Studying for your AP Notation Test!')
 
-@client.command(aliases=['pf'])
-async def pensfactory(ctx):
-    await ctx.send('https://pensfactory.pl/ is gary approved. It is recommended for many as the shipping fee is generally low for everyone. However it seems to have shut down... stock is very low and hasn\'t been updated in a while.')
-
-@client.command(aliases=['uxz'])
-async def spinworlds(ctx):
-    await ctx.send('Spinworlds is not gary approved. However many people like the place since it has more parts/mods than pensfactory while being in Europe aswell. Gary feels like uxz and oleg are at the same level in bruhness. **The place is not a scam.** If you are planning to buy from here, I would recommend getting parts. Here is a video I made where I go through every mod on spinworlds, which I recommend watching to make sure you know 100% what you\'re gonna receive if you choose to purchase from here. https://youtu.be/IHI0G01TxGc')\
-
-@client.command()
-async def spinstudio(ctx):
-    await ctx.send('https://www.spinstudio.org Spin Studo is a gary approved shop. You can use this site to browse the items. To purchase, please message coffeelucky#5177 on discord, @coffeelucky on instagram, or spinstudio.ps on insta.')
-
 @client.command(aliases=['modtuts'])
 async def pmpm(ctx):
     await ctx.send('https://penmodding.pm')
-
-@client.command(aliases=['oleg'])
-async def psershop(ctx):
-    await ctx.send('Psershop is not gary approved. It is not recommended to purchase from. Oleg has made some bruh business decision in past yes. He also makes incorrect modding tutorials often. Some people have had the wrong mods sent, or just not showing up.')
-
-@client.command()
-async def bruhshops(ctx):
-    await ctx.send('these are the bruhest shops ranked from most bruh to least. \n Missplaced(honestjosh) > Penstock (Alex Lantz/Suhov/Suvhov/Suckcock) > Psershop(Oleg) = SpinWorlds(Uxz)')
 
 @client.command()
 async def fenwiki(ctx):
@@ -117,14 +89,6 @@ async def flyingpanda(ctx):
 @client.command(aliases=['canadashops'])
 async def canada(ctx):
     await ctx.send('For cheapest shipping, I would recommend shops and traders from Europe. Pensfactory.pl is suggested. Canada to Canada shipping is actually more expensive than EU to Canada oddly, so Penmoddingworld isn\'t the cheapest. Spinstudio is a good option aswell.')
-
-@client.command(aliases=['approved', 'approvedshop'])
-async def approvedshops(ctx):
-    await ctx.send('Please note that the best option is dependant on your location. These are not in any order. \n Pensfactory \n Penwish \n Penmoddingworld \n Spin Studio \n Spiloops \n Taobao (Eno, Xhand, Whirl, Dongman, Mr. Nope) \n Pentasy \n Many useful parts can also be found on Amazon, Ebay, Aliexpress, etc and local stores like Office Depot, Staples, Walmart, Dollar Stores.')
-
-@client.command(aliases=['unapproved'])
-async def unapprovedshops(ctx):
-    await ctx.send('These are all not gary approved.. \n Penstock \n Psershop \n Spinworlds \n Missplaced \n **Please note that none of these are scams by definition.** You will still likely get your mod, unless it be from pencock lolol')
 
 @client.command(aliases=['sonic'])
 async def sonictut(ctx):
@@ -207,25 +171,13 @@ async def bak(ctx):
     await ctx.send('bak = back = backaround = bakaround = korean bak \n KTRINH IS WRONG ABOUT THIS ONE TRUST ME ON THIS')
 
 @client.command()
-async def taobao(ctx):
-    await ctx.send('taobao is big chinese store where manufactoring places sell cheap stuff yes. it is like where every store gets their parts in bulk (spinworlds, penmoddingworld, spinstudio, etc). https://www.reddit.com/r/penspinning/comments/aifitn/how_to_order_from_eno_if_you_live_in_the_usa/ Here is a simple guide on how to use Superbuy as an agent, but it\'s pretty much the same for every other agent, I personally used wegobuy. Taobao is used to buy many things, like replica sneakers and cheap fashion, so there\'s plenty of tutorials on how to buy from there that would work with buying pens. **I\'d say it\'s only worth to buy from taobao if you\'re buying a whole bunch of stuff**, not just one or two mods lol as shipping can be pricy and long for some. Save money and buy in bulk from here. You can also watch my guide, which goes a bit more into detail. https://youtu.be/w9tUAMJvVKU')
-
-@client.command()
-async def spiloops(ctx):
-    await ctx.send('Spiloops (https://spiloops.com) is a Japanese penspinning store yes. It has a bunch of stuff that you would\'nt be able to find in other shops, like the 80% rushon miffy sub, opt ballpoint pens, or 7.62 nato bullet tips. Similar to taobao, I\'d only purchase from here if you\'re going to be buying a lot of pens as shipping price can be expensive. This is the only store you can actually make a legit i.suk emboss v3 from.')
-
-@client.command()
 async def links3(ctx):
     await ctx.send('https://www.youtube.com/watch?v=sJjx797j1x8')
     
 @client.command()
 async def tornado(ctx):
     await ctx.send('Tornado is the japanese term for extended thumbaround (NOT CONTINUOUS). So please dont use the term tornado because: \n1. I highly doubt ur japanese, and even if u r then it would be silly for you to come here and assume everyone will contort to your tricknames, also japanese terms kinda wack so pls dont use them even if ur weeb\n2. ALEX SUHOV IS WRONG\n3. Naming this linkage is kinda bruh')
-
-@client.command(aliases=['honestjosh',])
-async def missplaced(ctx):
-    await ctx.send('Missplaced is a shop run by honestjosh which is a kind of a scam. All parts are sourced from penwish so just get it from there. All of the mods aren\'t made particularly well and are way too overpriced. The shop was made to abuse tiktok beginners by taking their money. Honestjosh claims he will donate a portion of his profits to charity....lol yea ok buddy')
-    
+   
 @client.command()
 async def charge(ctx):
         await ctx.send('tbh this trick is fairly simple to understand from any tutorial off youtube, just keep practicing and trying. if ur really bad and taking 1 year to learn this then maybe send a video and ask what wrong\n**also its normal for the pen to move down when doing charge cont lol**')
