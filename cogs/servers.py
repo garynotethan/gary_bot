@@ -51,8 +51,8 @@ class Servers(commands.cog):
 
 
 
-#async def setup(bot):
-#    await bot.add_cog(Servers(bot))
+async def setup(bot):
+    await bot.add_cog(Servers(bot))
 
 
 
