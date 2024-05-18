@@ -9,9 +9,9 @@ async def on_ready():
     print('gary bot is lets gooo')
 
     for cog_file in settings.COGS_DIR.glob("*.py"):
-        if cog_file.name != "__init__.py":
+        if cog_file!= "__init__.py":
             await client.load_extension(f"cogs.{cog_file.name[:-3]}")
-
+'''
 @client.event
 async def on_error(ctx, error, message: discord.message):
     if isinstance(error, commands.MissingRequiredArgument):
@@ -21,7 +21,7 @@ async def on_error(ctx, error, message: discord.message):
         await ctx.send("bruh :woman_zombie:")
 
    #add more errors here later...
-
+'''
 @client.command()
 async def modguide(ctx):
     await ctx.send('https://media.discordapp.net/attachments/833954424425545788/897172202942767194/unknown.png?width=382&height=300')
@@ -37,22 +37,6 @@ async def slowmo(ctx):
 @client.command(aliases=['penwish','pw'])
 async def usa(ctx):
     await ctx.send('penwish.com is the recommended shop for american buyers, **international shipping be expensive so it aint the best if u no from usa**')
-
-@client.command()
-async def sls(ctx):
-    await ctx.send('https://www.youtube.com/playlist?list=PLqvo4PPYx7nU8j3Cjz2u6dZ7s0FERNJ7y')
-
-@client.command()
-async def links1(ctx):
-    await ctx.send('https://www.youtube.com/watch?v=4RZDt9B4sfQ')
-
-@client.command()
-async def links2(ctx):
-    await ctx.send('https://www.youtube.com/watch?v=24CxVVMact4')
-
-@client.command()
-async def cvs(ctx):
-    await ctx.send('https://www.youtube.com/playlist?list=PLE4F7122D79474299 I recommend watching a bunch of cvs to get some inspiration! It\'s also a great way to develop spinning preferences and see potential areas you want to explore.')
 
 @client.command(aliases=['notationbook', 'psbook',])
 async def notation(ctx):
@@ -90,31 +74,15 @@ async def flyingpanda(ctx):
 async def canada(ctx):
     await ctx.send('For cheapest shipping, I would recommend shops and traders from Europe. Pensfactory.pl is suggested. Canada to Canada shipping is actually more expensive than EU to Canada oddly, so Penmoddingworld isn\'t the cheapest. Spinstudio is a good option aswell.')
 
-@client.command(aliases=['sonic'])
-async def sonictut(ctx):
-    await ctx.send('https://youtu.be/IyfvQbepErw')
-
 @client.command(aliases=['index'])
 async def penindex(ctx):
     await ctx.send('https://docs.google.com/spreadsheets/d/1hcoKoxpsKErape9xDHWiMErspsXQS4bGGeomv4eP0K4/edit?usp=sharing')
-
-@client.command(aliases=['bust', 'busttutorial'])
-async def busttut(ctx):
-    await ctx.send('These are gary approved bust tutorials. \n https://www.youtube.com/watch?v=TUYpVo14lWo \n https://www.youtube.com/watch?v=0yL7hn011V8&t \n https://www.youtube.com/watch?v=UvyNfif6Kdo')
 
 @client.command()
 async def modguide2(ctx):
     await ctx.send('https://media.discordapp.net/attachments/910992658036576296/922579145987342416/unknown.png')
 
-@client.command(aliases=['g2', 'g2removal', 'g2grips'])
-async def g2grip(ctx):
-    await ctx.send('https://www.youtube.com/watch?v=HNZhY6q8Aw0')
-
-@client.command(aliases=['walmartmod', 'walmart', 'walmartmodv1', 'garywalmartmod1', 'walmartmod1', ])
-async def garywalmartmod(ctx):
-    await ctx.send('https://www.youtube.com/watch?v=xJl72ZisCVw')
-
-@client.command(aliases=["garybotfaq"])
+client.command(aliases=["garybotfaq"])
 async def garybot(ctx):
     await ctx.send('Gary bot was originally made for Gary\'s IT class. It was made to aid specifically the Penstock discord community. Due to the nicheness of Penspinning, the constant spreading of misleading information, and the likes of Alex Suhov.. more modern ideologies needed to be expressed to beginners. Additionally, penspinning is a little trickier to research information through google, most likely due to the unexpected shutdown of UPSB. With Gary Bot, one could answer a newbie\'s question without the need to type a whole ass paragraph, one could easily grab useful links without the hassle of searching through discord pins or browser bookmarks, and one could know what gary thinks on a specific topic. Be prepared for a lots of the bads of the grammar. **Gary Bot is very biased. It is meant as a 24/7 replacement for Gary and only spits out what Gary would say in certain situations.**')
 
@@ -171,10 +139,6 @@ async def bak(ctx):
     await ctx.send('bak = back = backaround = bakaround = korean bak \n KTRINH IS WRONG ABOUT THIS ONE TRUST ME ON THIS')
 
 @client.command()
-async def links3(ctx):
-    await ctx.send('https://www.youtube.com/watch?v=sJjx797j1x8')
-    
-@client.command()
 async def tornado(ctx):
     await ctx.send('Tornado is the japanese term for extended thumbaround (NOT CONTINUOUS). So please dont use the term tornado because: \n1. I highly doubt ur japanese, and even if u r then it would be silly for you to come here and assume everyone will contort to your tricknames, also japanese terms kinda wack so pls dont use them even if ur weeb\n2. ALEX SUHOV IS WRONG\n3. Naming this linkage is kinda bruh')
    
@@ -183,40 +147,16 @@ async def charge(ctx):
         await ctx.send('tbh this trick is fairly simple to understand from any tutorial off youtube, just keep practicing and trying. if ur really bad and taking 1 year to learn this then maybe send a video and ask what wrong\n**also its normal for the pen to move down when doing charge cont lol**')
         
 @client.command()
-async def links(ctx):
-    await ctx.send('https://www.youtube.com/watch?v=4RZDt9B4sfQ\nhttps://www.youtube.com/watch?v=24CxVVMact4\nhttps://www.youtube.com/watch?v=sJjx797j1x8')
-    
-@client.command()
 async def wenyu(ctx):
     await ctx.send('I believe Wenyu is the most proficient pen spinner in the history of pen spinning. His tunnel vision on refining the trick "fingerpass" is the most impressive display of  the greatness of the human mind. Not only is his sheer intelligence and dexterity compared to the likes of i.suk and Menowa* but also Einstein, Shakespeare, Picasso, and even Jesus himself. If you slow down his very impressive WR video you can see that in every pass his fingers dance as if they were cherry blossom petals flowing through the spring breeze. Each and every micrometer of movement in his fingers are calculated with quantum physics perfectly following the golden ratio. If we were to look inside his hands the blood would not be red, it would be gold. He has evolved to replace the cringe hemoglobin ridden blood of the ordinary human with Ichor, the blood of the Gods.  It is a miracle that he even permits our mortal human eyes to gaze upon his impeccably perfect fingerpass. Wenyu is truly a God amongst men.')
-    
-@client.command(aliases=['staplesmod', 'staples', 'staplesmodv1', 'garystaplesmod1', 'staplesmod1',])
-async def garystaplesmod(ctx):
-    await ctx.send('https://youtu.be/xgSxwK2zYpk')
-   
-@client.command(aliases=['guide','guide1','beginnerguide1'])
-async def beginnerguide(ctx):
-    await ctx.send('https://youtu.be/QUL49ntJwFM')
     
 @client.command(aliases=['bestmod'])
 async def bestpenmod(ctx):
     await ctx.send('There is no such things as a best pen mod. If there was, everybody would spin the same mod. Mods are entirely personal preference. While it could be said that there\'s some objectively better pen mods, do not let that prevent you from getting mods that you are personally interested in and want to make (please actually learn about more mods than ivan, menowa vgg, isuk emboss, ivan emboss, waterfall, flying panda, tornado, etc). **Every pen mod can be spun by any level**')
     
 @client.command()
-async def essentials(ctx):
-    await ctx.send('This is playlist contains Gary\'s favourite penspinning videos and stuff he would recommend noobs watch aswell. https://youtube.com/playlist?list=PLkPBnIe5Br650sNllwRwlURZeBZDAjSrb')
-    
-@client.command()
-async def chopstick(ctx):
-    await ctx.send('https://youtu.be/9bAevHmu9oE')
-    
-@client.command()
 async def drgrip(ctx):
     await ctx.send('https://cdn.discordapp.com/attachments/306632688721461248/1077824307679465533/image.png')
-    
-@client.command(aliases=['st'])
-async def supertip(ctx):
-    await ctx.send('https://youtu.be/ep6MSDCFHm0')
     
     
 client.run(settings.DISCORD_API_SECRET)
