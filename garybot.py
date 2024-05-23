@@ -115,10 +115,6 @@ async def gay(ctx):
     await ctx.send('https://docs.google.com/document/d/13Pl82npI1GKLnZRA1GgPSFxj5I20u7k_T0Ypj3q7XjM/edit?usp=drivesdk')
 
 @client.command()
-async def retards(ctx):
-    await ctx.send('the retard role is a throwback to the old penstock server where I would make a retard tier list to rank how annoying people were. **if you see somebody with this role, i would advise you to avoid listening to their advice**')
-
-@client.command()
 async def setup(ctx):
     await ctx.send('https://coffeeluckyps.wordpress.com/2021/10/19/camera-setup-guide-for-pen-spinning-combo/')
 
