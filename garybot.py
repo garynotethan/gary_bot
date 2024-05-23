@@ -11,8 +11,8 @@ async def on_ready():
     for cog_file in settings.COGS_DIR.glob("*.py"):
         if cog_file!= "__init__.py":
             await client.load_extension(f"cogs.{cog_file.name[:-3]}")
-'''
-@client.event
+
+@client.error
 async def on_error(ctx, error, message: discord.message):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("bruh :woman_zombie:")
@@ -21,7 +21,7 @@ async def on_error(ctx, error, message: discord.message):
         await ctx.send("bruh :woman_zombie:")
 
    #add more errors here later...
-'''
+
 @client.command()
 async def modguide(ctx):
     await ctx.send('https://media.discordapp.net/attachments/833954424425545788/897172202942767194/unknown.png?width=382&height=300')
