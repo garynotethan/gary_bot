@@ -56,7 +56,11 @@ async def ogivan(ctx):
 
 @client.command(aliases=['beginnermod'])
 async def beginnermods(ctx):
-    await ctx.send('Beginner can spin whatever they want tbh. There are no mods specifically \'for beginners\', or \'for pros\', etc. We recommend ivan and hash comssa because they\'re cheap and easy to make.')
+    await ctx.send('Beginner can spin whatever they want tbh. There are no mods specifically\
+                    \'for beginners\', or \'for pros\', etc. We recommend ivan and hash comssa \
+                   because they\'re cheap and easy to make.\nI would just recommend anything cheap and accessible \
+                   to you, eg. for me that would be gary walmart/staples mod, shoelotion waterfall, mango sharpie \
+                   tul, etc')
     
 @client.command(aliases=['i.sukpapermod', 'isukpapermod'])
 async def papermod(ctx):
