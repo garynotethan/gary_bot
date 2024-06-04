@@ -32,7 +32,7 @@ async def trickorder(ctx):
 
 @client.command(aliases=['slomo'])
 async def slowmo(ctx):
-    await ctx.send('www.youtube.com')
+    await ctx.send('www.youtube.com\njust change playback to 0.25 or whatever and hope there\'s enough frames lmao')
 
 @client.command(aliases=['penwish','pw'])
 async def usa(ctx):
