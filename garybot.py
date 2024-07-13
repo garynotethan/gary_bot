@@ -12,12 +12,13 @@ async def on_ready():
         if cog_file!= "__init__.py":
             await client.load_extension(f"cogs.{cog_file.name[:-3]}")
 
-@client.error
-async def on_error(ctx, error, message: discord.message):
+@client.event
+async def on_command_error(ctx, error):
+    '''
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("bruh :woman_zombie:")
-    elif isinstance(error, commands.CommandNotFound):
-        await message.add_reaction("🧟‍♀️")
+    '''
+    if isinstance(error, commands.CommandNotFound):
         await ctx.send("bruh :woman_zombie:")
 
    #add more errors here later...
