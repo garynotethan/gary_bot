@@ -159,5 +159,9 @@ async def bestpenmod(ctx):
 async def drgrip(ctx):
     await ctx.send('https://cdn.discordapp.com/attachments/306632688721461248/1077824307679465533/image.png')
     
+@client.command()
+async def ping(ctx):
+    await ctx.message.author.send("bro.. aint no way u be pinging a robot LMAO")
+    
     
 client.run(settings.DISCORD_API_SECRET)

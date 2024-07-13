@@ -48,6 +48,9 @@ class Servers(commands.Cog):
     async def ibps(self, ctx):
         await ctx.send('https://discord.gg/tmFJMsbp7u')
 
+    @commands.command(aliases=['krug'])
+    async def krugdom(self, ctx):
+        await ctx.send('https://discord.gg/eMQSvwDd5Q')
 
 async def setup(bot):
     await bot.add_cog(Servers(bot))
