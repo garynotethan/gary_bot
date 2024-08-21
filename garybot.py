@@ -25,7 +25,8 @@ async def on_command_error(ctx, error):
 
 @client.command()
 async def modguide(ctx):
-    await ctx.send('https://media.discordapp.net/attachments/833954424425545788/897172202942767194/unknown.png?width=382&height=300')
+    await ctx.send('https://media.discordapp.net/attachments/833954424425545788/897172202942767194/unknown.png?width=382&height=300\n
+                   There\'s also a bunch of really underrated and accessible mods that you can make with parts you can get nearby. Please talk with modders from your country to learn about them!')
 
 @client.command()
 async def trickorder(ctx):
