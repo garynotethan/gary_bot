@@ -41,7 +41,7 @@ async def slowmo(ctx):
 async def usa(ctx):
     await ctx.send('penwish.com is the recommended shop for american buyers, **international shipping be expensive so it aint the best if u no from usa**')
 
-@client.command(aliases=['notationbook', 'psbook',])
+@client.command(aliases=['notationbook', 'psbook', 'book'])
 async def notation(ctx):
     await ctx.send('https://drive.google.com/file/d/1TlDb1H5bRnZZdswmdr07m-58yxs4Es7-/view Good Luck Studying for your AP Notation Test!')
 
@@ -160,10 +160,12 @@ async def bestpenmod(ctx):
 @client.command()
 async def drgrip(ctx):
     await ctx.send('https://cdn.discordapp.com/attachments/306632688721461248/1077824307679465533/image.png')
-    
+
+'''
 @client.command()
 async def ping(ctx):
     await ctx.message.author.send("bro.. aint no way u be pinging a robot LMAO")
+'''
     
     
 client.run(settings.DISCORD_API_SECRET)
