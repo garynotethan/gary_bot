@@ -36,7 +36,7 @@ class PS_Stores(commands.Cog):
 
     @commands.command(aliases=['approved', 'approvedshop'])
     async def approvedshops(self, ctx):
-        await ctx.send('Please note that the best option is dependant on your location. These are not in any order. \n Pensfactory \n Penwish \n Penmoddingworld \n Spin Studio \n Spiloops \n Taobao (Eno, Xhand, Whirl, Dongman, Mr. Nope) \n Pentasy \n Many useful parts can also be found on Amazon, Ebay, Aliexpress, etc and local stores like Office Depot, Staples, Walmart, Dollar Stores.')
+        await ctx.send('Please note that the best option is dependant on your location. These are not in any order. \n ~~Pensfactory~~ \n Penwish \n ~~Penmoddingworld~~ \n Spin Studio \n Spiloops \n Taobao (Eno, Xhand, Whirl, Dongman, Mr. Nope) \n Pentasy \n Many useful parts can also be found on Amazon, Ebay, Aliexpress, etc and local stores like Office Depot, Staples, Walmart, Dollar Stores.')
 
     @commands.command(aliases=['unapproved'])
     async def unapprovedshops(self, ctx):
