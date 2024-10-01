@@ -19,7 +19,7 @@ async def on_command_error(ctx, error):
         await ctx.send("bruh :woman_zombie:")
     '''
     if isinstance(error, commands.CommandNotFound):
-        await ctx.send("bruh :woman_zombie:")
+        await ctx.send("+:woman_zombie:")
 
    #add more errors here later...
 
