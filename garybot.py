@@ -161,6 +161,10 @@ async def bestpenmod(ctx):
 async def drgrip(ctx):
     await ctx.send('https://cdn.discordapp.com/attachments/306632688721461248/1077824307679465533/image.png')
 
+@client.command()
+async def stdiff(ctx):
+    await ctx.send('https://www.instagram.com/p/BtXJNG7Bqaq/?img_index=1')
+
 '''
 @client.command()
 async def ping(ctx):
