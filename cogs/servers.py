@@ -42,7 +42,7 @@ class Servers(commands.Cog):
 
     @commands.command()
     async def fenspinner(self, ctx):
-        await ctx.send('https://discord.gg/9ERAUCDAkS')
+        await ctx.send('https://discord.gg/Fz2zHWjn8G')
 
     @commands.command(aliases=['india'])
     async def ibps(self, ctx):
