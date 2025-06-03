@@ -13,4 +13,4 @@ TLDR: Gary bot allows users (mostly gary) to quickly answer commonly asked quest
 
 So, Gary Bot is a very simple FAQ page with no real other functionality.
 
-[Here is the invite link](https://discord.com/oauth2/authorize?client_id=902648820016496651&permissions=8&integration_type=0&scope=bot)
+[Here is the invite link](https://discord.com/oauth2/authorize?client_id=902648820016496651)
