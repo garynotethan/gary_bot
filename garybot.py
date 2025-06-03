@@ -22,8 +22,11 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("bruh :woman_zombie:")
     '''
-    if isinstance(error, commands.CommandNotFound):
-        await ctx.message.add_reaction('🧟‍♀️')
+    if isinstance(error, commands.CommandNotFound) and ctx.message.content.startswith(client.command_prefix):
+        try:
+            await ctx.message.add_reaction('🧟‍♀️')
+        except discord.HTTPException as e:
+            print(f"failed to react: {e}")
 
    #add more errors here later...
 
