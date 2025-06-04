@@ -59,7 +59,7 @@ class PS_Stores(commands.Cog):
     @app_commands.allowed_installs(guilds=True, users=True)
     @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
     async def unapprovedshops(self, ctx):
-        await ctx.send('These are all not gary approved.. \n Penstock \n Psershop \n Spinworlds \n Missplaced \n **Please note that none of these are scams by definition.** You will still likely get your mod, unless it be from pencock lolol')
+        await ctx.send('These are all not gary approved.. \n ~~Penstock~~ \n Psershop \n Spinworlds \n Missplaced \n **Please note that none of these are scams by definition.** You will still likely get your mod, unless it be from pencock lolol')
 
     @commands.hybrid_command()
     @app_commands.allowed_installs(guilds=True, users=True)
