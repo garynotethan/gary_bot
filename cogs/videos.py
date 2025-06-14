@@ -40,7 +40,7 @@ class Videos(commands.Cog):
     @app_commands.allowed_installs(guilds=True, users=True)
     @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
     async def busttut(self, ctx):
-        await ctx.send('These are gary approved bust tutorials. \n https://www.youtube.com/watch?v=TUYpVo14lWo \n https://www.youtube.com/watch?v=0yL7hn011V8&t \n https://www.youtube.com/watch?v=UvyNfif6Kdo')
+        await ctx.send('These are gary approved bust tutorials. \n https://www.youtube.com/watch?v=0yL7hn011V8&t \n https://www.youtube.com/watch?v=UvyNfif6Kdo')
 
     @commands.hybrid_command(aliases=['g2', 'g2removal', 'g2grips'])
     @app_commands.allowed_installs(guilds=True, users=True)
